@@ -10,16 +10,16 @@ Both, for those providers who want to block registration using disposable emails
 # How to check if an email is a disposable email or not ?
 Make a HEAD request to the following endpoint.
 
-[https://bhogate.github.io/disposable-emails/`<FIRST_LETTER>`/`<EMAIL_DOMAIN>`](https://bhogate.github.io/disposable-emails/)
+[https://bhogate.github.io/disposable-emails/api/`<FIRST_LETTER>`/`<EMAIL_DOMAIN>`](https://bhogate.github.io/disposable-emails/api/)
 
 ### URL Construction
 - Trim all the whitespaces
 - Split the email with `@` eg. `email@provider.com`
 - Get the First character of the provider domain eg. for `example.com` the first charater is `e`
 - The full URL to check looks like
-   - `https://bhogate.github.io/disposable-emails/e/example.com`
-   - `https://bhogate.github.io/disposable-emails/a/awesome-email-example.com`
-   - `https://bhogate.github.io/disposable-emails/f/free-temporary-email.org`
+   - `https://bhogate.github.io/disposable-emails/api/e/example.com`
+   - `https://bhogate.github.io/disposable-emails/api/a/awesome-email-example.com`
+   - `https://bhogate.github.io/disposable-emails/api/f/free-temporary-email.org`
    - etc
 
 ### Response Status
