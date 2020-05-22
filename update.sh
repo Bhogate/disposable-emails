@@ -1,13 +1,39 @@
 #!/bin/bash
-for a_line in $(cat all-domains.txt | sort -u)
+
+echo "- Cleanup old files"
+if [ -d "api" ]; then
+	rm -rf api/
+fi
+
+# API Directory
+echo "- Creating the api/ Directory if doesn't exist"
+if [ ! -d "api/" ]; then
+	mkdir api
+fi
+
+# Other digit prefix directories
+echo "- Creating the api/<digit> directories if doesn't exist"
+for a_dir in {0..9}; do
+	if [ ! -d "api/${a_dir}" ]; then
+		mkdir "api/${a_dir}/"
+	fi
+done
+
+# Other letter prefix directories
+echo "- Creating the api/<letter> directories if doesn't exist"
+for a_dir in {a..z}; do
+	if [ ! -d "api/${a_dir}" ]; then
+		mkdir "api/${a_dir}/"
+	fi
+done
+
+for domain in $(cat all-domains.txt | sort -u	)
 do
-  echo "- ${a_line}"
-  domain=$(echo "${a_line}" | sed 's/^\w+//g' | sed 's/\w$//g' | tr '[:upper:]' '[:lower:]')  
-  first_letter=$(echo "${domain}" | cut -c 1 )
-  echo "-- -- ${first_letter}"
-  echo "-- -- ${domain}"
-  if [ ! -d "api/${first_letter}" ]; then
-    mkdir  "api/${first_letter}/"
-  fi
-  echo "DISPOSABLE" > "api/${first_letter}/${domain}.html"
+	first_letter=$(echo "${domain}" | cut -c 1 )
+	echo -n $first_letter
+	echo "-- " $domain
+	filename="api/${first_letter}/${domain}.html"
+	if [ ! -f "${filename}" ];then
+		echo "DISPOSABLE" > "${filename}"
+	fi
 done
