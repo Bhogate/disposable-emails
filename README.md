@@ -5,7 +5,7 @@ A collection of disposable / temporary emails that people use while registering 
 This repo accepts pull requests, and keeps adding sites / domains that provide disposable emails.
 
 # Whom does this benefit ?
-Both, for providers who want to block and the users who want to get some random dispoable email. It's upto the usage.
+Both, for those providers who want to block registration using disposable emails and the users who want to get some random disposable email. It's up to the usage.
 
 # How to check if an email is a disposable email or not ?
 Make a HEAD request to the following endpoint.
