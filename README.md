@@ -1,4 +1,4 @@
-# Disposable Emails Checklist
+# Disposable Emails
 A collection of disposable / temporary emails that people use while registering on a service provider's website.
 
 _Last updated - 22nd May, 2020_
