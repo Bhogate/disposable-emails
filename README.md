@@ -10,7 +10,7 @@ Both, for providers who want to block and the users who want to get some random 
 # How to check if an email is a disposable email or not ?
 Make a HEAD request to the following endpoint.
 
-[https://bhogate.github.io/disposable-emails/__FIRST_LETTER__/__EMAIL_DOMAIN__](https://bhogate.github.io/disposable-emails/)
+[https://bhogate.github.io/disposable-emails/`<FIRST_LETTER>`/`<EMAIL_DOMAIN>`](https://bhogate.github.io/disposable-emails/)
 
 ### URL Construction
 - Trim all the whitespaces
