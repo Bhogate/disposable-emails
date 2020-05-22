@@ -1,6 +1,14 @@
 # Disposable Emails Checklist
 A collection of disposable / temporary emails that people use while registering on a service provider's website.
 
+_Last updated - 22nd May, 2020_
+
+# DISCLAIMER
+THIS LIST IS BUILT OUT OF A COLLECTION FROM DIFFERENT SOURCES, AND DOESN'T GUARANTEE TO BE FULLY ACCURATE. SOME DOMAINS MIGHT GO LOW ON REPUTATION OVERTIME, WHILST SOME MIGHT GO HIGH. THE LIST MIGHT GET UPDATED, HOWEVER DEPENDS UPON THE AVAILBILITY OF SUCH SOURCES AND THE CONTRIBUTION THAT THE COMMUNITY MAKES. IF YOU ARE LOOKING FOR A MORE ROBUST AND ACCURATE SOLUTION, YOU MIGHT LOOK FOR SOME PAID SAAS BASED SERVICES. PLEASE USE AT YOUR OWN RISK
+
+# Want to Add or Remove
+Pull requests are welcome
+
 # Is this comprehensive ?
 This repo accepts pull requests, and keeps adding sites / domains that provide disposable emails.
 
